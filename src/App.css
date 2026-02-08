@@ -1,42 +1,606 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: h;
+  src: url("../public/Font/h.otf");
+}
+
+@font-face {
+  font-family: h6;
+  src: url("../public/Font/h6.ttf");
+}
+
+@font-face {
+  font-family: p;
+  src: url("../public/Font/p.otf");
+}
+
+:root {
+  --oring: #F36C03;
+  --blue: #0253A0;
+  --white: #E6E6E6;
+  --black: #000000;
+  --green: #207404;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: h;
+}
+
+h6,
+h5 {
+  font-family: h6;
+}
+
+p {
+  font-family: p;
+}
+
+/* 🔹 Preloader */
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  color: #fff;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 200px;
+  }
+}
+
+
+.navbar {
+
+  .nav-link {
+    background-color: var(--blue);
+    color: var(--white);
+    margin: 1px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .number {
+    background-color: var(--blue);
+    display: grid;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--white);
+  }
+}
+
+.hover {
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover::after,
+.hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #F36C03, #0253A0);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover:hover::after,
+.hover:hover::before {
+  transform: scaleX(1);
+}
+
+.home1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: url("https://ik.imagekit.io/uvsjit70p/2?updatedAt=1769147710371");
+  background-position: left;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid var(--white);
+
+    .btn {
+      background-color: var(--blue);
+    }
+  }
+}
+
+@media (max-width:500px) {
+  .home1 {
+    height: auto;
+    text-align: center;
+    background-position: right;
+    padding: 100px 0px;
+  }
+}
+
+.home2 {
+  margin: 30px 0px;
+
+  h1 {
+    color: var(--blue);
+  }
+
+  .btn {
+    background-color: var(--blue);
+    color: var(--white);
+  }
+}
+
+.home3 {
+  margin: 30px 0px;
+  background-image: url("https://ex-coders.com/html/turmet/assets/img/about/about-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0px;
+
+  .content {
+    text-align: center;
+    border-radius: 10px;
+
+    h1 {
+      color: var(--blue);
+    }
+  }
+
+  .box {
+    background-color: red;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .card {
+    text-align: left;
+
+    .btn {
+      background-color: var(--blue);
+      width: 100%;
+      color: var(--white);
+      font-weight: bold;
+    }
+  }
+}
+
+.home4 {
+  background-color: red;
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0)), url("https://wowtheme7.com/tf/travelor/travelor/assets/images/project/project-bg.jpg");
+  padding: 50px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+
+  h1 {
+    color: var(--blue);
+  }
+}
+
+.home5 {
+  background-color: var(--blue);
+  padding: 70px 0px 0px 0px;
+  text-align: center;
+  color: var(--white);
+
+  .box {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+    transition: 0.3s ease-in-out;
+
+    img {
+      width: 70px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background-image: linear-gradient(rgba(243, 108, 3, 1), rgba(2, 83, 160, 1));
+    }
+  }
+}
+
+.home6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ex-coders.com/html/turmet/assets/img/cta-bg.jpg");
+  padding: 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--white);
+
+  h1 {
+    color: transparent;
+    font-size: 50px;
+    -webkit-text-stroke: 1px var(--white);
+  }
+}
+
+.home7 {
+  padding: 30px 0px;
+
+  h1 {
+    color: var(--blue);
+  }
+
+  .card {
+    overflow: hidden;
+
+    h2 {
+      color: var(--blue);
+    }
+
+    img {
+      transition: 0.20s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.home8 {
+  margin: -40px 0px 50px 0px;
+
+  h1 {
+    color: var(--blue);
+  }
+
+  .icon {
+    background-color: var(--blue);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 5px;
+  }
+}
+
+.home9 {
+  padding: 30px 0px;
+
+  h1 {
+    color: var(--blue);
+  }
+
+  .btn {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+  }
+
+  .card {
+    position: relative;
+    overflow: hidden;
+
+    .content {
+      bottom: -25%;
+      transition: 0.20s ease-in-out;
+      text-align: center;
+      position: absolute;
+      background: linear-gradient(to top, rgba(2, 83, 160, 1) 50%, rgba(2, 83, 160, 0) 100%);
+      width: 100%;
+      padding-top: 20px;
+    }
+
+    &:hover .content {
+      bottom: 0;
+      color: var(--white);
+    }
+  }
+}
+
+.footer {
+  background-color: var(--blue);
+  padding-bottom: 20px;
+  color: var(--white);
+  background-image: url("https://html.tonatheme.com/2025/tourvisor/assets/images/shape/shape-7.png");
+
+  h1 {
+    color: var(--oring);
+  }
+
+  img {
+    width: 150px;
+  }
+
+  .Linki {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .iconbox {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius: 50px;
+
+    .icon {
+      padding: 6px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      color: var(--white);
+      background-color: var(--blue);
+    }
+  }
+}
+
+@media (max-width:500px) {
+  .footer {
+    img {
+      width: 250px;
+    }
+  }
+}
+
+.FlashOffer1 {
+  width: 100%;
+  height: 55vh;
+  color: var(--white);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url("https://ik.imagekit.io/uvsjit70p/FlashOffer?updatedAt=1770371800252");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .btn {
+    background-color: var(--blue) !important;
+  }
+}
+
+.Schengen_Visa1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://3globaltours.co.uk/wp-content/uploads/2025/08/Apply-Your-Schengen-Visa.png");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Schengen_Visa2 {
+  padding: 50px 0px;
+
+  .content {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-size: cover;
+    background-position: center;
+    border: 5px double var(--blue);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+    h1 {
+      color: var(--blue);
+    }
+  }
+
+  .box {
+    background-color: var(--blue);
+    border-radius: 10px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    border: 5px double var(--white);
+    justify-content: center;
+    background: linear-gradient(120deg, #0253A0, #F36C03);
+    background-size: 300% 300%;
+    animation: slideColor 5s infinite ease-in-out;
+
+  }
+}
+
+@keyframes slideColor {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width:500px) {
+  .Schengen_Visa2 {
+    .box {
+      display: none;
+    }
+  }
+}
+
+.About1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://html.tonatheme.com/2025/tourvisor/assets/images/background/page-title.jpg");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.About2 {
+  h1 {
+    color: var(--blue);
+  }
+
+  .mainbox {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+    .box {
+      background-color: var(--blue);
+      color: var(--white);
+      padding: 5px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.about3 {
+  padding: 50px 0px;
+  color: var(--white);
+
+  .box {
+    background-color: var(--blue);
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.20s ease-in-out;
+
+    .icon {
+      background-color: var(--white);
+      color: var(--blue);
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.about4 {
+  h1 {
+    color: var(--blue);
+  }
+}
+
+.team-section {
+  padding: 50px 5%;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.team-card {
+  background: var(--blue);
+  border-radius: 16px;
+  padding: 25px 20px 40px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.img-box {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.img-box:hover .social {
+  opacity: 1;
+}
+
+.social i {
+  color: white;
+  background: var(--blue);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.team-card h3 {
+  color: var(--white);
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 600px) {
+  .team-container {
+    grid-template-columns: 1fr;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

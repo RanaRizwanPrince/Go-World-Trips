@@ -13,12 +13,12 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3">
-                            <img src="https://ik.imagekit.io/uvsjit70p/lpng?updatedAt=1769515179360" className=" img-thumbnail" data-aos="fade-up" />
-                            <p data-aos="fade-up">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error incidunt ipsum voluptatum. Voluptatem, consequuntur commodi, reiciendis eius non voluptates quis minima doloremque consequuntur commodi, reiciendis.</p>
+                            <img src="https://ik.imagekit.io/uvsjit70p/clogo?updatedAt=1771330760361" className=" img-fluid animate__animated animate__flash animate__infinite infinite" data-aos="fade-up" />
+                            <p data-aos="fade-up">Go World Trips is your trusted partner for unforgettable journeys and experiences. We provide expert guidance, seamless bookings, and personalised travel experiences worldwide.</p>
                         </div>
-                        <div className="col-lg-2">
-                            <h1 data-aos="fade-up">Quick link</h1>
-                            <NavLink className="Linki" to="" data-aos="fade-up">About Us</NavLink><br />
+                        <div className="col-lg-3">
+                            <h1 data-aos="fade-up">Essential Links</h1>
+                            <NavLink className="Linki" to="/About" data-aos="fade-up">About Us</NavLink><br />
                             <NavLink className="Linki" to="" data-aos="fade-up">Delivery Information</NavLink><br />
                             <NavLink className="Linki" to="" data-aos="fade-up">Privacy Policy</NavLink><br />
                             <NavLink className="Linki" to="" data-aos="fade-up">Terms & Conditions</NavLink><br />
@@ -26,15 +26,15 @@ const Footer = () => {
                             <NavLink className="Linki" to="" data-aos="fade-up">Return Policy</NavLink><br />
                         </div>
                         <div className="col-lg-3">
-                            <h1 data-aos="fade-up">Our Services</h1>
+                            <h1 data-aos="fade-up">Our Assistance</h1>
                             <NavLink className="Linki" to="" data-aos="fade-up">Best Tour Guide</NavLink><br />
                             <NavLink className="Linki" to="" data-aos="fade-up">Tour Booking</NavLink><br />
                             <NavLink className="Linki" to="" data-aos="fade-up">Hotel Booking</NavLink><br />
                             <NavLink className="Linki" to="" data-aos="fade-up">Ticket Booking</NavLink><br />
                             <NavLink className="Linki" to="" data-aos="fade-up">Rental Services</NavLink><br />
                         </div>
-                        <div className="col-lg-4">
-                            <h1 data-aos="fade-up">Contact Information</h1>
+                        <div className="col-lg-3">
+                            <h1 data-aos="fade-up">Get In Touch</h1>
                             <p data-aos="fade-up"><b>Location:</b> 167-169 Great Portland Street , 5th Floor, London, United Kingdom, W1W 5PF</p>
                             <p data-aos="fade-up"><b>Email:</b> info@goworldtrips.co.uk</p>
                             <p data-aos="fade-up"><b>Website:</b> goworldtrips.co.uk</p>
@@ -48,7 +48,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div><hr data-aos="fade-up" />
-                    <p className='text-center text-white' data-aos="fade-up"> All rights reserved, 2026 Travelin. Go World Trips</p>
+                    <p className='text-center' data-aos="fade-up"> All rights reserved, 2026 Travelin. Go World Trips</p>
                 </div>
             </section>
         </>

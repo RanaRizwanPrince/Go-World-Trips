@@ -5,10 +5,8 @@ const FlashOffer = () => {
         <>
             <section className="FlashOffer1">
                 <div className="container">
-                    <h3>FLASH OFFER</h3>
-                    <h1>Limited-Time Travel Offer: 35% Discount on Visa Assistance!</h1>
-                    <p>Plan your journey with confidence. Get professional visa support, faster results, and a huge discount but hurry, this deal won’t last!</p>
-                    <NavLink to="" className="btn hover">Get Free Consultancy</NavLink>
+                    <h1>Schengen visa flash offer card in the end of countries card One document for seamless travel across 27+ European nations</h1>
+                    <NavLink to="" className="btn hover">Get Consultancy</NavLink>
                 </div>
             </section>
         </>

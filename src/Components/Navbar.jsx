@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 const Navbar = () => {
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const toggleDropdown = () => {
+        setDropdownOpen(!isDropdownOpen);
+    };
     const closeNavbar = () => {
         const navbarToggler = document.querySelector('.navbar-collapse');
         if (navbarToggler.classList.contains('show')) {
             navbarToggler.classList.remove('show');
         }
-    }
+        setDropdownOpen(false);
+    };
     return (
         <>
-            <nav className="navbar navbar-expand-lg ">
+            <nav className="navbar navbar-expand-lg">
                 <div className="container">
                     <NavLink className="navbar-brand" to="/">Go World Trips</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,8 +28,15 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <NavLink className="nav-link hover" to="/Schengen_Visa" onClick={closeNavbar}>Schengen Visa</NavLink>
                             </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link hover" to="/About" onClick={closeNavbar}>About Us</NavLink>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle hover" href="#" id="pagesDropdown" role="button" aria-expanded={isDropdownOpen} onClick={toggleDropdown}>
+                                    Pages
+                                </a>
+                                <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} aria-labelledby="pagesDropdown">
+                                    <li><NavLink className="dropdown-item" to="/About" onClick={closeNavbar}>About Us</NavLink></li>
+                                    <li><NavLink className="dropdown-item" to="/Team" onClick={closeNavbar}>Team</NavLink></li>
+                                    {/* <li><NavLink className="dropdown-item" to="/FAQ" onClick={closeNavbar}>FAQ</NavLink></li> */}
+                                </ul>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link hover" to="/Blogs" onClick={closeNavbar}>Blogs</NavLink>
@@ -38,6 +50,6 @@ const Navbar = () => {
                 </div>
             </nav>
         </>
-    )
-}
+    );
+};
 export default Navbar;

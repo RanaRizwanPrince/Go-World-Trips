@@ -16,11 +16,10 @@
 }
 
 .scroll-btn.show {
-    right: 30px;
-    /* slide from side */
+    left: 15px;
+    bottom: 10px;
 }
 
 .scroll-btn:hover {
-    background: #0253A0;
     transform: translateY(-5px);
 }

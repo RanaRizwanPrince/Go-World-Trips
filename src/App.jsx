@@ -7,16 +7,19 @@ import Navbar from './Components/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import About from './Pages/About';
 import Blogs from './Pages/Blogs';
+import Team from './Pages/Team';
 import Contact from './Pages/Contact';
 import Schengen_Visa from './Pages/Schengen_Visa';
+import Faq from './Pages/Faq'
 import Footer from './Components/Footer';
 import MouseFollower from './Components/MouseFollower';
 import ScrollToTopButton from './Components/ScrollToTopButton';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import MousEffact from './Components/MousEffact';
+import UnderConstruction from './Pages/UnderConstruction';
 function App() {
-
   useEffect(() => {
     AOS.init({
       duration: 1000,   // animation speed
@@ -26,15 +29,20 @@ function App() {
   }, []);
   return (
     <>
-      <MouseFollower />
+      <a href="https://wa.me/447311132376" target="_blank"> <img src="https://ik.imagekit.io/uvsjit70p/whatsapp?updatedAt=1772191949485" className="whatsapp" /></a>
+      {/* <MouseFollower /> */}
+      <MousEffact />
       <Navbar />
       <Preloader />
       <ScrollToTopButton />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/Team' element={<Team />} />
+        <Route path='//Faq' element={<Faq />} />
         <Route path='/About' element={<About />} />
         <Route path='/Blogs' element={<Blogs />} />
         <Route path='/Contact' element={<Contact />} />
+        <Route path="*" element={<UnderConstruction />} />
         <Route path='/Schengen_Visa' element={<Schengen_Visa />} />
       </Routes>
       <Footer />

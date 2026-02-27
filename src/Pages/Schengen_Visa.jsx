@@ -8,8 +8,8 @@ const Schengen_Visa = () => {
             <section className="Schengen_Visa1">
                 <div className="container">
                     <div className="content">
-                        <h1>Apply Your Schengen Visa</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nesciunt saepe, consequuntur harum quos distinctio explicabo tenetur suscipit eaque. Illum aut repellendus animi praesentium expedita aperiam excepturi iure dicta, nemo maiores reprehenderit omnis, ipsa totam mollitia consequuntur! Similique dolore ab sint sed dolor architecto aliquam tempora atque! Labore, repellendus vitae?</p>
+                        <h1>Apply Your Dream Destiny</h1>
+                        <p>Dreaming about sipping coffee in Paris? Walking through ancient streets in Rome? Watching the Northern Lights in Norway? Europe isn’t just a destination, it’s an experience waiting to happen. And your first step? Getting your Schengen visa. We don’t just process paperwork. We clear the path so you can focus on packing your bags and planning your outfits for Instagram-worthy moments. Let’s break it all down simply, clearly, and stress-free and enjoy your trips with Go World Trips.</p>
                     </div>
                 </div>
                 <img src="https://3globaltours.co.uk/wp-content/uploads/2025/08/img8-1.png" className="w-100" />
@@ -17,8 +17,8 @@ const Schengen_Visa = () => {
             <section className="Schengen_Visa2">
                 <div className="container">
                     <div className="content">
-                        <h1>All Countries Where We Offer Trusted Visa Services</h1>
-                        <p>This section highlights all countries for which we provide professional visa services Our team guides you through requirements documentation and application processes ensuring accuracy transparency and success Whether tourism business study or family travel we help applicants confidently apply with expert support timely updates and reliable assistance for smooth international travel planning across global destinations worldwide with care and commitment</p>
+                        <h1>Global Visa Services You Can Trust</h1>
+                        <p>We provide expert visa services for a comprehensive range of international destinations. Our professional team ensures precise documentation, clear guidance, and seamless application processing. Whether you are travelling for tourism, business, study, or family travel, we provide reliable support, timely updates, and personalized assistance, helping you navigate requirements with confidence and ensuring a smooth, efficient, and successful visa application experience.</p>
                     </div>
                     <div className="row">
                         {SchengenVData.map((data) => (
@@ -26,7 +26,7 @@ const Schengen_Visa = () => {
                                 <div className="card">
                                     <img src={data.img} className='img-fluid img-thumbnail' />
                                     <div className="card-body">
-                                        <h5>{data.h3}</h5>
+                                        <h4>{data.h3}</h4>
                                         <p>{data.p}</p>
                                         <NavLink to={data.link} className="btn hover">Read More</NavLink>
                                     </div>

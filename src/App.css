@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: h;
-  src: url("../public/Font/h.otf");
+.container {
+  width: 90%;
+  max-width: 1450px !important;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 @font-face {
-  font-family: h6;
-  src: url("../public/Font/h6.ttf");
+  font-family: h;
+  src: url("../public/Font/h.otf");
 }
 
 @font-face {
@@ -34,9 +36,13 @@ h4 {
   font-family: h;
 }
 
-h6,
-h5 {
-  font-family: h6;
+.whatsapp {
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+  width: 50px;
+  position: fixed;
+  z-index: 9999;
 }
 
 p {
@@ -63,22 +69,26 @@ p {
 
 
 .navbar {
+  background-color: var(--blue);
+
+  .navbar-brand {
+    color: var(--white);
+  }
 
   .nav-link {
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--white);
     margin: 1px;
     padding: 10px;
     border-radius: 5px;
   }
 
   .number {
-    background-color: var(--blue);
+    background-color: var(--white);
     display: grid;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    color: var(--white);
+    color: var(--blue);
   }
 }
 
@@ -119,25 +129,13 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  background-image: url("https://ik.imagekit.io/uvsjit70p/2?updatedAt=1769147710371");
+  background-image: url("https://turmet-react.vercel.app/assets/img/hero/hero2.jpg");
   background-position: left;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-
-  .content {
-    color: white;
-    background-color: rgb(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    border: 3px solid var(--white);
-
-    .btn {
-      background-color: var(--blue);
-    }
-  }
+  color: var(--white);
 }
 
 @media (max-width:500px) {
@@ -199,27 +197,28 @@ p {
 }
 
 .home4 {
-  background-color: red;
-  background-image: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0)), url("https://wowtheme7.com/tf/travelor/travelor/assets/images/project/project-bg.jpg");
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0)), url("https://wowtheme7.com/tf/travelor/travelor/assets/images/service/service-three-bg.jpg");
   padding: 50px 0px;
   background-size: cover;
   background-attachment: fixed;
 
-  h1 {
+  h1,
+  h4 {
     color: var(--blue);
   }
 }
 
 .home5 {
   background-color: var(--blue);
-  padding: 70px 0px 0px 0px;
   text-align: center;
   color: var(--white);
+  padding: 50px 0px;
 
   .box {
-    padding: 10px;
+    width: 100%;
+    padding: 15px 2px 2px 2px;
     border-radius: 5px;
-    border: 1px solid var(--white);
+    border: 5px double var(--white);
     transition: 0.3s ease-in-out;
 
     img {
@@ -259,7 +258,7 @@ p {
   .card {
     overflow: hidden;
 
-    h2 {
+    h4 {
       color: var(--blue);
     }
 
@@ -293,6 +292,12 @@ p {
 .home9 {
   padding: 30px 0px;
 
+  .box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
   h1 {
     color: var(--blue);
   }
@@ -316,6 +321,11 @@ p {
       padding-top: 20px;
     }
 
+    &:hover img {
+      transition: 0.20s ease-in-out;
+      transform: scale(1.1);
+    }
+
     &:hover .content {
       bottom: 0;
       color: var(--white);
@@ -323,14 +333,34 @@ p {
   }
 }
 
+.home10 {
+  padding: 50px 0px;
+
+  .top {
+    color: var(--blue);
+  }
+
+  h1 {
+    color: var(--blue);
+  }
+
+  .card h4 {
+    color: var(--blue);
+  }
+
+  .btn {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+  }
+}
+
 .footer {
-  background-color: var(--blue);
+  background-color: var(--white);
   padding-bottom: 20px;
-  color: var(--white);
   background-image: url("https://html.tonatheme.com/2025/tourvisor/assets/images/shape/shape-7.png");
 
   h1 {
-    color: var(--oring);
+    color: var(--blue);
   }
 
   img {
@@ -339,11 +369,11 @@ p {
 
   .Linki {
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
   }
 
   .iconbox {
-    background-color: var(--white);
+    background-color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -356,8 +386,8 @@ p {
       width: 40px;
       height: 40px;
       border-radius: 50px;
-      color: var(--white);
-      background-color: var(--blue);
+      color: var(--blue);
+      background-color: var(--white);
     }
   }
 }
@@ -486,9 +516,18 @@ p {
     .box {
       background-color: var(--blue);
       color: var(--white);
-      padding: 5px;
+      padding: 15px;
       border-radius: 10px;
+      width: 100%;
     }
+  }
+
+  .box {
+    background-color: var(--blue);
+    padding: 20px;
+    color: var(--white);
+    border-radius: 10px;
+    border: 2px solid var(--white);
   }
 }
 
@@ -523,84 +562,140 @@ p {
   }
 }
 
-.team-section {
-  padding: 50px 5%;
-  text-align: center;
-}
+.contact1 {
+  padding: 50px 0px;
 
-.team-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
+  .box {
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid var(--blue);
 
-.team-card {
-  background: var(--blue);
-  border-radius: 16px;
-  padding: 25px 20px 40px;
-  position: relative;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: 0.3s;
-}
+    h1 {
+      color: var(--blue);
+    }
 
-.team-card:hover {
-  transform: translateY(-10px);
-}
-
-.img-box {
-  position: relative;
-  width: 160px;
-  height: 160px;
-  margin: auto;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.social {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  gap: 35px;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.img-box:hover .social {
-  opacity: 1;
-}
-
-.social i {
-  color: white;
-  background: var(--blue);
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.team-card h3 {
-  color: var(--white);
-  margin-top: 20px;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .team-container {
-    grid-template-columns: repeat(2, 1fr);
+    .link {
+      text-decoration: none;
+      color: var(--black);
+      font-weight: bold;
+    }
   }
 }
 
-@media (max-width: 600px) {
-  .team-container {
-    grid-template-columns: 1fr;
+.team2 {
+  padding: 30px 0px;
+
+  h1 {
+    color: var(--blue);
+  }
+
+  .card {
+    position: relative;
+    overflow: hidden;
+
+    .content {
+      position: absolute;
+      color: var(--white);
+      bottom: -20%;
+      text-align: center;
+      width: 100%;
+      background: linear-gradient(to top, #0253A0, rgba(2, 83, 160, 0));
+    }
+  }
+
+  .card:hover .content {
+    bottom: 0;
+    transition: bottom 0.3s ease-in-out;
+  }
+
+}
+
+.team3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://wowtheme7.com/tf/travelor/travelor/assets/images/cta/cta-bg.jpg");
+  padding: 50px 0px;
+  color: var(--white);
+  text-align: center;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width:500px) {
+  .team3 h1 {
+    font-size: 50px;
+  }
+}
+
+.Blog1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://turmet-react.vercel.app/assets/img/breadcrumb/breadcrumb.jpg");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.blog2 {
+  padding: 30px 0px;
+
+  .content {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 3px double var(--blue);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+    h1 {
+      color: var(--blue);
+    }
+  }
+
+  .card {
+    .date {
+      color: var(--blue);
+    }
+
+    h5 {
+      color: var(--blue);
+      font-family: h;
+    }
+
+    .btn {
+      background-color: var(--blue);
+      color: var(--white);
+    }
+  }
+}
+
+.faq1 {
+  padding: 50px 0px;
+
+  h1 {
+    color: var(--blue);
+  }
+
+  .box {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+
+    h3 {
+      color: var(--blue);
+    }
   }
 }

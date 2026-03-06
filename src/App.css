@@ -218,11 +218,13 @@ p {
 .popup-box.error {
   color: red;
 }
-
+.Destinations h1{
+  color: var(--oring);
+  text-align: center;
+}
 .TravelTips {
   position: sticky;
-  top: 5%;
-  margin-bottom: 30px;
+  top: 0px; 
 
   .content {
     animation: GWT 0.10s linear infinite alternate;
@@ -284,7 +286,7 @@ p {
   .home1 {
     height: auto; 
     background-position: center;
-    padding: 100px 0px;
+    padding: 30px 0px;
   }
 }
 

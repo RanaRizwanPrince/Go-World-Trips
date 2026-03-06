@@ -5,6 +5,9 @@ import { BiLogoInstagramAlt } from "react-icons/bi";
 import { FaYoutube } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
+import { FaPhone } from "react-icons/fa";
 const Footer = () => {
     return (
         <>
@@ -19,9 +22,9 @@ const Footer = () => {
                         <div className="col-lg-3 col-md-6 my-2">
                             <h1 data-aos="fade-up">Essential Links</h1>
                             <NavLink className="Linki" to="/About" data-aos="fade-up">About Us</NavLink><br />
-                            <NavLink className="Linki" to="" data-aos="fade-up">Delivery Information</NavLink><br /> 
+                            <NavLink className="Linki" to="" data-aos="fade-up">Delivery Information</NavLink><br />
                             <NavLink className="Linki" to="" data-aos="fade-up">Terms & Conditions</NavLink><br />
-                            <NavLink className="Linki" to="" data-aos="fade-up">Customer Service</NavLink><br /> 
+                            <NavLink className="Linki" to="" data-aos="fade-up">Customer Service</NavLink><br />
                         </div>
                         <div className="col-lg-3 col-md-6 my-2">
                             <h1 data-aos="fade-up">Our Assistance</h1>
@@ -33,10 +36,9 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-3 col-md-6 my-2">
                             <h1 data-aos="fade-up">Get In Touch</h1>
-                            <p data-aos="fade-up"><b>Location:</b> 167-169 Great Portland Street , 5th Floor, London, United Kingdom, W1W 5PF</p>
-                            <p data-aos="fade-up"><b>Email:</b> info@goworldtrips.co.uk</p>
-                            <p data-aos="fade-up"><b>Website:</b> goworldtrips.co.uk</p>
-                            <p data-aos="fade-up"><b>Phone:</b> +44 7311 132376</p>
+                            <p data-aos="fade-up"><FaLocationDot /> 167-169 Great Portland Street , 5th Floor, London, United Kingdom, W1W 5PF</p>
+                            <p data-aos="fade-up"><IoMdMail /> info@goworldtrips.co.uk</p>
+                            <p data-aos="fade-up"><FaPhone /> +44 7311 132376</p>
                             <div className="iconbox" data-aos="fade-up">
                                 <NavLink target='_blank' to="https://www.facebook.com/GoWorldTrips"><FaFacebook className='icon' /></NavLink>
                                 <NavLink target='_blank' to="https://www.instagram.com/goworldtripsuk/"><BiLogoInstagramAlt className='icon' /></NavLink>

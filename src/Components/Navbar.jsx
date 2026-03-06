@@ -15,10 +15,10 @@ const Navbar = () => {
     };
     return (
         <>
-        <img src="https://ik.imagekit.io/uvsjit70p/nav?updatedAt=1772479767358" className="w-25" />
+            <center><img src="https://ik.imagekit.io/uvsjit70p/nav?updatedAt=1772479767358" className="w-25 d-block d-lg-none" /></center>
             <nav className="navbar navbar-expand-md">
                 <div className="container">
-                       <NavLink className="number d-block d-lg-none" to="tel:+447311132376">+44 7311 132376</NavLink>
+                    <NavLink className="number d-block d-lg-none" to="tel:+447311132376">+44 7311 132376</NavLink>
                     <NavLink className="navbar-brand d-none d-lg-block" to="/"><img src="https://ik.imagekit.io/uvsjit70p/nav?updatedAt=1772479767358" alt="Logo" /></NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
@@ -40,11 +40,11 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <NavLink className="nav-link hover" to="/Contact" onClick={closeNavbar}>Contact Us</NavLink>
                             </li>
-                        </ul> 
+                        </ul>
                         <NavLink className="number d-none d-lg-block" to="tel:+447311132376">+44 7311 132376</NavLink>
                     </div>
                 </div>
-            </nav> 
+            </nav>
         </>
     );
 };

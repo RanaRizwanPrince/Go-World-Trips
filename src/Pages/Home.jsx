@@ -14,13 +14,13 @@ const Home = () => {
             <section className="home1">
                 <div className="container">
                     <div className="row d-flex align-items-center">
-                        <div className="col-lg-7">
-                            <img src="https://ik.imagekit.io/uvsjit70p/Plan?updatedAt=1771000611132" className="img-fluid animate__animated animate__fadeInTopRight animate__delay-5s" />
+                        <div className="col-lg-6">
+                            <img src="https://ik.imagekit.io/uvsjit70p/Plan?updatedAt=1771000611132" className="img-fluid animate__animated animate__backInDown animate__delay-5s" />
                             <h5>Get Unforgettable Pleasure With Us</h5>
-                            <h1>Welcome to Go World Trips  Your Gateway to Europe and Beyond</h1>
+                            <h3>Welcome to Go World Trips  Your Gateway to Europe and Beyond</h3>
                             <p>Dreaming about walking through the romantic streets of Paris? Exploring the beauty of Switzerland? Or planning your future with UK citizenship?</p>
                         </div>
-                        <div className="col-lg-5">
+                        <div className="col-lg-6">
                             <ContactForm/>
                         </div>
                     </div>

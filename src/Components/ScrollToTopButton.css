@@ -22,7 +22,7 @@
 
 @media (max-width:500px) {
     .scroll-btn.show {
-        bottom: 100px;
+        bottom: 50px;
     }
 }
 

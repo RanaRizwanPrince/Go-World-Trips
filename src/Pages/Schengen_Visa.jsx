@@ -28,7 +28,7 @@ const Schengen_Visa = () => {
                                     <div className="card-body">
                                         <h4>{data.h3}</h4>
                                         <p>{data.p}</p>
-                                        <NavLink to={data.link} className="btn hover">Read More</NavLink>
+                                        <NavLink to={data.link} className="btn link hover">Apply Now</NavLink>
                                     </div>
                                 </div>
                             </div>

@@ -45,6 +45,12 @@ h4 {
   z-index: 9999;
 }
 
+@media (max-width:500px) {
+  .whatsapp {
+    bottom: 50px;
+  }
+}
+
 p {
   font-family: p;
 }
@@ -67,12 +73,21 @@ p {
   }
 }
 
+/* Active page button */
+.navbar .nav-link.active {
+  background-color: var(--oring);
+  /* Blue */
+  color: #fff !important;
+  font-weight: 600;
+}
 
 .navbar {
-  background-color: var(--blue);
-
   .navbar-brand {
-    color: var(--white);
+    padding: 0;
+
+    img {
+      width: 70px;
+    }
   }
 
   .nav-link {
@@ -83,12 +98,12 @@ p {
   }
 
   .number {
-    background-color: var(--white);
+    background-color: var(--oring);
     display: grid;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    color: var(--blue);
+    color: var(--white);
   }
 }
 
@@ -123,6 +138,133 @@ p {
   transform: scaleX(1);
 }
 
+.form1 {
+  form {
+    border-radius: 10px;
+    /* background-color: var(--oring); */
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+
+    .link {
+      text-decoration: none;
+      background-color: var(--white);
+      padding: 7px;
+      text-align: center;
+      border: none;
+      border-radius: 50px;
+      width: 50%;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .form1 form {
+    padding: 2%;
+  }
+
+  .form1 .link {
+    width: 60%;
+    margin: auto;
+  }
+
+  .form1 .Response {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 30px 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.popup-box.success {
+  color: green;
+}
+
+.popup-box.error {
+  color: red;
+}
+
+.TravelTips {
+  position: sticky;
+  top: 5%;
+  margin-bottom: 30px;
+
+  .content {
+    animation: GWT 0.10s linear infinite alternate;
+    background-color: var(--oring);
+    color: var(--white);
+    padding: 50px 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid var(--white);
+
+    .link {
+      background-color: var(--white);
+      padding: 8px;
+      font-weight: bold;
+      border-radius: 2px;
+      text-decoration: none;
+      color: var(--oring);
+    }
+  }
+}
+
+.collapsbox {
+  .accordion-button:not(.collapsed) {
+    background-color: var(--oring);
+    color: var(--white);
+  }
+
+  h4 {
+    color: var(--oring);
+  }
+}
+
+@keyframes GWT {
+  to {
+    border: 2px solid var(--blue);
+  }
+
+  form {
+    border: 2px solid var(--white);
+  }
+}
+
 .home1 {
   width: 100%;
   height: 100vh;
@@ -140,9 +282,8 @@ p {
 
 @media (max-width:500px) {
   .home1 {
-    height: auto;
-    text-align: center;
-    background-position: right;
+    height: auto; 
+    background-position: center;
     padding: 100px 0px;
   }
 }
@@ -246,29 +387,10 @@ p {
     font-size: 50px;
     -webkit-text-stroke: 1px var(--white);
   }
-}
 
-.home7 {
-  padding: 30px 0px;
-
-  h1 {
-    color: var(--blue);
-  }
-
-  .card {
-    overflow: hidden;
-
-    h4 {
-      color: var(--blue);
-    }
-
-    img {
-      transition: 0.20s ease-in-out;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
+  .link {
+    background-color: var(--oring);
+    color: var(--white);
   }
 }
 
@@ -312,22 +434,13 @@ p {
     overflow: hidden;
 
     .content {
-      bottom: -25%;
+      bottom: 0%;
       transition: 0.20s ease-in-out;
       text-align: center;
       position: absolute;
       background: linear-gradient(to top, rgba(2, 83, 160, 1) 50%, rgba(2, 83, 160, 0) 100%);
       width: 100%;
       padding-top: 20px;
-    }
-
-    &:hover img {
-      transition: 0.20s ease-in-out;
-      transform: scale(1.1);
-    }
-
-    &:hover .content {
-      bottom: 0;
       color: var(--white);
     }
   }
@@ -450,6 +563,11 @@ p {
     }
   }
 
+  .link {
+    background: var(--oring);
+    color: var(--white);
+  }
+
   .box {
     background-color: var(--blue);
     border-radius: 10px;
@@ -461,7 +579,6 @@ p {
     background: linear-gradient(120deg, #0253A0, #F36C03);
     background-size: 300% 300%;
     animation: slideColor 5s infinite ease-in-out;
-
   }
 }
 
@@ -562,6 +679,26 @@ p {
   }
 }
 
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://html.tonatheme.com/2025/tourvisor/assets/images/background/page-title.jpg");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      color: var(--oring);
+    }
+  }
+}
+
 .contact1 {
   padding: 50px 0px;
 
@@ -570,10 +707,10 @@ p {
     padding: 30px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--oring);
 
     h1 {
-      color: var(--blue);
+      color: var(--oring);
     }
 
     .link {
@@ -582,34 +719,6 @@ p {
       font-weight: bold;
     }
   }
-}
-
-.team2 {
-  padding: 30px 0px;
-
-  h1 {
-    color: var(--blue);
-  }
-
-  .card {
-    position: relative;
-    overflow: hidden;
-
-    .content {
-      position: absolute;
-      color: var(--white);
-      bottom: -20%;
-      text-align: center;
-      width: 100%;
-      background: linear-gradient(to top, #0253A0, rgba(2, 83, 160, 0));
-    }
-  }
-
-  .card:hover .content {
-    bottom: 0;
-    transition: bottom 0.3s ease-in-out;
-  }
-
 }
 
 .team3 {
@@ -624,6 +733,10 @@ p {
 
   h1 {
     font-size: 80px;
+  }
+
+  .btn {
+    background-color: var(--oring);
   }
 }
 
@@ -697,5 +810,492 @@ p {
     h3 {
       color: var(--blue);
     }
+  }
+}
+
+.France1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/france?updatedAt=1772573788139");
+  background-size: cover;
+  background-position: bottom;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.France2 {
+  .content {
+    background-color: var(--oring);
+    color: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0px;
+  }
+}
+
+.Belgium1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/b?updatedAt=1772571597108");
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Austria1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/austria?updatedAt=1772573467942");
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Italy1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Itlay?updatedAt=1772573288727");
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Spain1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Spain?updatedAt=1772610405359");
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Bulgaria1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Bulgaria?updatedAt=1772642892487");
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Croatia1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Croatia?updatedAt=1772643064248");
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Czech1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Czech?updatedAt=1772643243011");
+  background-size: cover;
+  background-position: bottom;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Denmark1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Denmark?updatedAt=1772610761242");
+  background-size: cover;
+  background-position: top;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Estonia1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Estonia?updatedAt=1772642723244");
+  background-size: cover;
+  background-position: top;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Finland1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Finland?updatedAt=1772610988951");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Greece1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Germany?updatedAt=1772611144139");
+  background-size: cover;
+  background-position: bottom;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Germany1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Germany?updatedAt=1772611144139");
+  background-size: cover;
+  background-position: bottom;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Hungary1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Hungary?updatedAt=1772611641316");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Iceland1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Iceland?updatedAt=1772611748356");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Latvia1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Latvia?updatedAt=1772611840150");
+  background-size: cover;
+  background-position: bottom;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Liechtenstein1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Liechtenstein?updatedAt=1772611973021");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Lithuania1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Lithuania?updatedAt=1772612061569");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Luxembourg1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Luxembourg?updatedAt=1772642523436");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Malta1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Malta?updatedAt=1772612150284");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Netherlands1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Netherlands?updatedAt=1772643560189");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Norway1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Norway?updatedAt=1772609923578");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Poland1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Poland?updatedAt=1772610205209");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Portugal1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Portugal?updatedAt=1772573237286");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Romania1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Romania?updatedAt=1772643773671");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Slovakia1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Slovakia?updatedAt=1772643964236");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Slovenia1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Slovenia?updatedAt=1772644255405");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Sweden1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Sweden?updatedAt=1772644376564");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Switzerland1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/Switzerland?updatedAt=1772612334591");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
   }
 }

@@ -6,7 +6,7 @@
     height: 45px;
     border-radius: 50%;
     border: none;
-    background: #0253A0;
+    background: #F48120;
     color: white;
     font-size: 20px;
     cursor: pointer;
@@ -18,6 +18,12 @@
 .scroll-btn.show {
     left: 15px;
     bottom: 10px;
+}
+
+@media (max-width:500px) {
+    .scroll-btn.show {
+        bottom: 100px;
+    }
 }
 
 .scroll-btn:hover {

@@ -13,9 +13,9 @@
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
   <script>
-    AOS.init({
-      offset: 250, easing: 'ease', duration: 4000,
-    })
+    useEffect(() => {
+      AOS.init();
+    }, []);
   </script>
 </body>
 

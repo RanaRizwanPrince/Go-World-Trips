@@ -1,13 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 const UnderConstruction = () => {
     return (
-        <div className="container">
-            <div style={{ textAlign: 'center', marginTop: '50px' }}>
-                <h1>🚧 We are Polishing This Page for You! 🚧</h1>
-                <p>Thank you for your patience. We are currently enhancing our website to provide you with a better digital experience. This particular section is undergoing essential maintenance and will be launched shortly. In the meantime, please feel free to browse our other services or contact our support team if you require any immediate assistance.</p>
-                <Link to="/" style={{ color: 'blue', textDecoration: 'underline' }}>Home</Link>
-            </div>
+        <div className="col-lg-8 col-md-8 offset-lg-2 offset-md-2">
+            <img src="https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg?semt=ais_rp_progressive&w=740&q=80" className="w-100" />
         </div>
     );
 };

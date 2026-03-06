@@ -2,10 +2,11 @@ import React from 'react'
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMailOpen } from "react-icons/io5";
+import ContactForm from "../Components/ContactForm";
 const Contact = () => {
     return (
         <>
-            <section className="About1">
+            <section className="contact">
                 <div className="container">
                     <div className="content">
                         <h1>Welcome to Go World Trips  Your Gateway to Unforgettable Journeys</h1>
@@ -14,6 +15,7 @@ const Contact = () => {
                 </div>
                 <img src="https://3globaltours.co.uk/wp-content/uploads/2025/08/img8-1.png" className="w-100" />
             </section>
+            <ContactForm />
             <section className="contact1">
                 <div className="container">
                     <div className="row">

@@ -5,7 +5,6 @@ import { RiGuideFill } from "react-icons/ri";
 import { SiCustomink } from "react-icons/si";
 import { AiFillCustomerService } from "react-icons/ai";
 import { GrStatusGood } from "react-icons/gr";
-import { teamData } from "../Data/BenefitsData";
 import { NavLink } from 'react-router-dom';
 const About = () => {
     return (
@@ -132,24 +131,11 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className="team2">
+            <section className="team3">
                 <div className="container">
-                    <h6>Our Experts</h6>
-                    <h1>Meet our Destination Expert</h1>
-                    <p className="lead">Our dedicated team of travel professionals is committed to delivering exceptional service, expert guidance, and personalised travel solutions. With deep industry knowledge and a client-first approach, we ensure every journey is smooth, secure, and unforgettable for our UK travellers.</p>
-                    <div className="row">
-                        {teamData.slice(0, 3).map((member, index) => (
-                            <div className="col-lg-4">
-                                <div className="card" key={index}>
-                                    <img src={member.img} alt={member.name} className="img-fluid" />
-                                    <div className="content">
-                                        <NavLink to=""><h3>{member.name}</h3></NavLink>
-                                        <p>{member.role}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    <h1>Let’s Capture Beauty of the World</h1>
+                    <p className="lead">Discover breathtaking destinations, unforgettable journeys, and magical moments that turn every trip into a lifetime memory.</p>
+                    <NavLink to="/contact" className="btn hover">Booking Today</NavLink>
                 </div>
             </section>
         </>

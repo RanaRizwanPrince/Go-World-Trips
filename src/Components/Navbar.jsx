@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import ContactForm from './ContactForm';
 const Navbar = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const toggleDropdown = () => {
@@ -14,9 +15,11 @@ const Navbar = () => {
     };
     return (
         <>
-            <nav className="navbar navbar-expand-lg">
+        <img src="https://ik.imagekit.io/uvsjit70p/nav?updatedAt=1772479767358" className="w-25" />
+            <nav className="navbar navbar-expand-md">
                 <div className="container">
-                    <NavLink className="navbar-brand" to="/">Go World Trips</NavLink>
+                       <NavLink className="number d-block d-lg-none" to="tel:+447311132376">+44 7311 132376</NavLink>
+                    <NavLink className="navbar-brand d-none d-lg-block" to="/"><img src="https://ik.imagekit.io/uvsjit70p/nav?updatedAt=1772479767358" alt="Logo" /></NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                     </button>
@@ -28,15 +31,8 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <NavLink className="nav-link hover" to="/Schengen_Visa" onClick={closeNavbar}>Schengen Visa</NavLink>
                             </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle hover" href="#" id="pagesDropdown" role="button" aria-expanded={isDropdownOpen} onClick={toggleDropdown}>
-                                    Pages
-                                </a>
-                                <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`} aria-labelledby="pagesDropdown">
-                                    <li><NavLink className="dropdown-item" to="/About" onClick={closeNavbar}>About Us</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="/Team" onClick={closeNavbar}>Team</NavLink></li>
-                                    {/* <li><NavLink className="dropdown-item" to="/FAQ" onClick={closeNavbar}>FAQ</NavLink></li> */}
-                                </ul>
+                            <li className="nav-item">
+                                <NavLink className="nav-link hover" to="/About" onClick={closeNavbar}>About Us</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link hover" to="/Blogs" onClick={closeNavbar}>Blogs</NavLink>
@@ -44,11 +40,11 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <NavLink className="nav-link hover" to="/Contact" onClick={closeNavbar}>Contact Us</NavLink>
                             </li>
-                        </ul>
-                        <NavLink className="number" to="tel:+447311132376">+44 7311 132376</NavLink>
+                        </ul> 
+                        <NavLink className="number d-none d-lg-block" to="tel:+447311132376">+44 7311 132376</NavLink>
                     </div>
                 </div>
-            </nav>
+            </nav> 
         </>
     );
 };

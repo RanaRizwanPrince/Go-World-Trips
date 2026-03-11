@@ -20,8 +20,8 @@ const Home = () => {
                             <h3>Welcome to Go World Trips  Your Gateway to Europe and Beyond</h3>
                             <p>Dreaming about walking through the romantic streets of Paris? Exploring the beauty of Switzerland? Or planning your future with UK citizenship?</p>
                         </div>
-                        <div className="col-lg-6">
-                            <ContactForm/>
+                        <div className="col-lg-6 animate__animated animate__backInUp animate__delay-4s">
+                            <ContactForm />
                         </div>
                     </div>
                 </div>
@@ -68,14 +68,14 @@ const Home = () => {
             <section className="home9">
                 <div className="container">
                     <div className="box row d-flex align-items-center">
-                        <div className="col-lg-10 col-md-10">
-                            <h5 data-aos="fade-up" data-aos-duration="4000">Journey Beyond the Ordinary</h5>
-                            <h1 data-aos="fade-up">Discover Popular Destinations</h1>
-                            <p data-aos="fade-up">Discover captivating destinations with our expertly curated tours. From vibrant cities to serene landscapes, enjoy seamless planning, comfort, authentic experiences, and unforgettable adventures that create lasting memories for every traveller.</p>
-                        </div>
-                        <div className="col-lg-2 col-md-2">
+                        {/* <div className="col"> */}
+                        <h5 data-aos="fade-up" data-aos-duration="4000">Journey Beyond the Ordinary</h5>
+                        <h1 data-aos="fade-up">Discover Popular Destinations</h1>
+                        <p data-aos="fade-up">Discover captivating destinations with our expertly curated tours. From vibrant cities to serene landscapes, enjoy seamless planning, comfort, authentic experiences, and unforgettable adventures that create lasting memories for every traveller.</p>
+                        {/* </div> */}
+                        {/* <div className="col-lg-2 col-md-2">
                             <NavLink to="/*" className='btn hover' data-aos="fade-up">Read More</NavLink>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="row">
                         {PopularD.map((item) => (
@@ -106,7 +106,7 @@ const Home = () => {
                                         <div className="card-body">
                                             <h4>Customised Tour Planning</h4>
                                             <p>We design personalised itineraries tailored to your preferences, ensuring seamless travel, unforgettable experiences, and expert guidance for every destination, making your journey truly unique and memorable.</p>
-                                            <NavLink to="/*" className="btn hover">Read More</NavLink>
+                                            {/* <NavLink to="/*" className="btn hover">Read More</NavLink> */}
                                         </div>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@ const Home = () => {
                                         <div className="card-body">
                                             <h4>Flight and Hotel Bookings</h4>
                                             <p>Enjoy hassle-free flight and hotel reservations with best deals, premium options, and convenient arrangements, guaranteeing comfort, affordability, and a smooth start to every adventure you embark on.</p>
-                                            <NavLink to="/*" className="btn hover">Read More</NavLink>
+                                            {/* <NavLink to="/*" className="btn hover">Read More</NavLink> */}
                                         </div>
                                     </div>
                                 </div>
@@ -138,7 +138,7 @@ const Home = () => {
                                         <div className="card-body">
                                             <h4>Visa Assistance</h4>
                                             <p>Our expert visa support ensures fast, hassle-free documentation and guidance, helping travellers navigate complex processes and enjoy smooth, stress-free international travel with confidence and ease.</p>
-                                            <NavLink to="/*" className="btn hover">Read More</NavLink>
+                                            {/* <NavLink to="/*" className="btn hover">Read More</NavLink> */}
                                         </div>
                                     </div>
                                 </div>
@@ -154,7 +154,7 @@ const Home = () => {
                                         <div className="card-body">
                                             <h4>Guided Local Experiences</h4>
                                             <p>Explore destinations with knowledgeable local guides, uncover hidden gems, immerse in authentic culture, and enjoy curated experiences that make every trip insightful, exciting, and unforgettable.</p>
-                                            <NavLink to="/*" className="btn hover">Read More</NavLink>
+                                            {/* <NavLink to="/*" className="btn hover">Read More</NavLink> */}
                                         </div>
                                     </div>
                                 </div>
@@ -209,7 +209,10 @@ const Home = () => {
                 <div className="container">
                     <div className="row d-flex align-items-center">
                         <div className="col-lg-6">
-                            <h5 data-aos="fade-up" className='text-center'>Ready to Embark on Your Next Journey?</h5> 
+                            <h5 data-aos="fade-up">Ready to Embark on Your Next Journey?</h5>
+                            <h1>Your Trusted Online Travel Booking Platform</h1>
+                            <p>Plan your perfect journey with ease using our trusted online platform. Browse curated tours, secure bookings, and seamless travel arrangements, ensuring every adventure is effortless, enjoyable, and unforgettable.</p>
+                            <p>Whether exploring iconic cities or hidden gems, our platform delivers exceptional travel experiences. Benefit from expert guidance, personalized packages, and worldwide support to make your trips smooth, exciting, and truly memorable.</p>
                         </div>
                         <div className="col-lg-6">
                             <img src="https://ex-coders.com/html/turmet/assets/img/man-image.png" className='img-fluid' data-aos="fade-up" />

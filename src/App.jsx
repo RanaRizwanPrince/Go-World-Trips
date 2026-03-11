@@ -1,4 +1,5 @@
 import './App.css';
+import { IoLogoWhatsapp } from "react-icons/io";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import Preloader from './Components/Preloader';
@@ -11,11 +12,11 @@ import Contact from './Pages/Contact';
 import Schengen_Visa from './Pages/Schengen_Visa';
 import Faq from './Pages/Faq'
 import Footer from './Components/Footer';
-import MouseFollower from './Components/MouseFollower'; 
+import MouseFollower from './Components/MouseFollower';
 import ScrollToTopButton from "./Components/ScrollToTopButton.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react"; 
+import { useEffect } from "react";
 import UnderConstruction from './Pages/UnderConstruction';
 import France from './Pages/Schengen_Visa/France';
 import Belgium from './Pages/Schengen_Visa/Belgium';
@@ -47,6 +48,13 @@ import Sweden from './Pages/Schengen_Visa/Sweden';
 import Slovenia from './Pages/Schengen_Visa/Slovenia';
 import Switzerland from './Pages/Schengen_Visa/Switzerland';
 import HomePopup from './Components/HomePopup.jsx';
+import Terms_Conditions from "./Components/Terms_Conditions";
+import Our_Services from "./Components/Our_Services";
+import Best_Tour_Guide from "./Pages/Best_Tour_Guide";
+import Tour_Booking from "./Pages/Tour_Booking";
+import Hotel_Booking from "./Pages/Hotel_Booking";
+import Ticket_Booking from "./Pages/Ticket_Booking";
+import Rental_Services from "./Pages/Rental_Services";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -58,8 +66,8 @@ function App() {
   return (
     <>
       <HomePopup />
-      <a href="https://wa.me/447311132376" target="_blank"> <img src="https://ik.imagekit.io/uvsjit70p/whatsapp?updatedAt=1772191949485" className="whatsapp" /></a>
-      <MouseFollower /> 
+      <a href="https://wa.me/447311132376" target="_blank"><IoLogoWhatsapp className="whatsapp"/>  </a>
+      <MouseFollower />
       <Navbar />
       <Preloader />
       <ScrollToTopButton />
@@ -101,6 +109,13 @@ function App() {
         <Route path='/Switzerland' element={<Switzerland />} />
         <Route path="*" element={<UnderConstruction />} />
         <Route path='/Schengen_Visa' element={<Schengen_Visa />} />
+        <Route path='/Terms_Conditions' element={<Terms_Conditions />} />
+        <Route path='/Our_Services' element={<Our_Services />} />
+        <Route path='/Best_Tour_Guide' element={<Best_Tour_Guide />} />
+        <Route path='/Tour_Booking' element={<Tour_Booking />} />
+        <Route path='/Hotel_Booking' element={<Hotel_Booking />} />
+        <Route path='/Ticket_Booking' element={<Ticket_Booking />} />
+        <Route path='/Rental_Services' element={<Rental_Services />} />
       </Routes>
       <Footer />
     </>

@@ -28,15 +28,15 @@ const About = () => {
                             <div className="mainbox">
                                 <div className="box">
                                     <h2><MdGppGood /></h2>
-                                    <h5>Total Location</h5>
+                                    <h5>Explore Destinations </h5>
                                 </div>
                                 <div className="box">
                                     <h2><MdGppGood /></h2>
-                                    <h5>Total Activity</h5>
+                                    <h5>Travel Experiences </h5>
                                 </div>
                                 <div className="box">
                                     <h2><MdGppGood /></h2>
-                                    <h5>Tour Packages</h5>
+                                    <h5>Holiday Packages</h5>
                                 </div>
                             </div>
                         </div>

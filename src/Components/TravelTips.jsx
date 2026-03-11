@@ -7,9 +7,9 @@ const TravelTips = () => {
             <section className="TravelTips">
                 <PopularDestinations />
                 <div className="content">
-                    <h5>Action Oriented</h5>
-                    <h2>Quick Travel Tips And Guides</h2>
-                    <p>Travel Europe with Ease From cultural tips to packing hacks, we provide the essentials for a seamless Schengen experience.</p>
+                    <h3>Proactive</h3>
+                    <h2>Fast and Useful Travel Tips</h2>
+                    <p>Plan a hassle-free Europe trip with practical cultural advice and smart packing strategies for a seamless Schengen experience.</p>
                     <NavLink className="link" to="https://wa.me/447311132376" target="_blank" rel="noopener noreferrer">Enquire Now</NavLink>
                 </div>
             </section>

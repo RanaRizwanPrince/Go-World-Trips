@@ -62,7 +62,7 @@ const ContactForm = () => {
                             </div>
                             <div className="col-lg-6 col-md-6 my-3">
                                 <label htmlFor="email">Enter Your Mobile Number *</label>
-                                <PhoneInput country={'pk'} value={phone} onChange={setPhone} inputStyle={{ width: '100%', height: '45px' }} />
+                                <PhoneInput country={'gb'} value={phone} onChange={setPhone} inputStyle={{ width: '100%', height: '45px' }} />
                                 <input type="hidden" name="phone" value={phone} />
                             </div>
                             <div className="col-lg-6 col-md-6 my-3">

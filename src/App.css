@@ -40,7 +40,9 @@ h4 {
   position: absolute;
   right: 1%;
   bottom: 1%;
-  width: 50px;
+  font-size: 50px;
+  color: var(--oring);
+  width: 50;
   position: fixed;
   z-index: 9999;
 }
@@ -141,13 +143,15 @@ p {
 .form1 {
   form {
     border-radius: 10px;
-    /* background-color: var(--oring); */
     background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--white);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;
 
     .link {
       text-decoration: none;
-      background-color: var(--white);
+      color: var(--white);
+      background-color: var(--oring);
       padding: 7px;
       text-align: center;
       border: none;
@@ -218,13 +222,15 @@ p {
 .popup-box.error {
   color: red;
 }
-.Destinations h1{
+
+.Destinations h1 {
   color: var(--oring);
   text-align: center;
 }
+
 .TravelTips {
   position: sticky;
-  top: 0px; 
+  top: 0px;
 
   .content {
     animation: GWT 0.10s linear infinite alternate;
@@ -274,17 +280,25 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("https://turmet-react.vercel.app/assets/img/hero/hero2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("https://turmet-react.vercel.app/assets/img/hero/hero2.jpg");
   background-position: left;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--white);
+
+  h3 {
+    color: var(--oring);
+  }
+
+  h5 {
+    color: var(--blue);
+  }
 }
 
 @media (max-width:500px) {
   .home1 {
-    height: auto; 
+    height: auto;
     background-position: center;
     padding: 30px 0px;
   }
@@ -545,6 +559,10 @@ p {
     color: var(--white);
     flex-direction: column;
     text-align: center;
+
+    h1 {
+      color: var(--oring);
+    }
   }
 }
 
@@ -566,7 +584,7 @@ p {
   }
 
   .link {
-    background: var(--oring);
+    background: var(--blue);
     color: var(--white);
   }
 
@@ -581,6 +599,10 @@ p {
     background: linear-gradient(120deg, #0253A0, #F36C03);
     background-size: 300% 300%;
     animation: slideColor 5s infinite ease-in-out;
+  }
+
+  h4 {
+    color: var(--blue);
   }
 }
 
@@ -619,6 +641,10 @@ p {
     color: var(--white);
     flex-direction: column;
     text-align: center;
+  }
+
+  h1 {
+    color: var(--oring);
   }
 }
 
@@ -761,6 +787,10 @@ p {
     color: var(--white);
     flex-direction: column;
     text-align: center;
+
+    h1 {
+      color: var(--oring);
+    }
   }
 }
 
@@ -843,7 +873,7 @@ p {
 }
 
 .Belgium1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/b?updatedAt=1772571597108");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/belgium?updatedAt=1772625367374");
   background-size: cover;
   background-position: center;
 
@@ -1300,4 +1330,149 @@ p {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.Our_Services1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/TicBok?updatedAt=1773223252556");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--oring);
+  }
+}
+
+.Our_Services2 h4 {
+  color: var(--oring);
+}
+
+.Best_Tour_Guide1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/BTG?updatedAt=1773222079404");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--oring);
+  }
+}
+
+.tour_booking1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/TB?updatedAt=1773222494587");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.Hotel_Booking1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/HB?updatedAt=1773222910549");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--oring);
+  }
+}
+
+.ticket1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/TicBok?updatedAt=1773223252556");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--oring);
+  }
+}
+
+.rental1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/RS?updatedAt=1773224870611");
+  background-size: cover;
+  background-position: bottom;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--oring);
+  }
+}
+
+.terms {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("https://ik.imagekit.io/uvsjit70p/Schengen_Visa/terms?updatedAt=1773227466559");
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--oring);
+  }
+}
+
+.terms1 h4 {
+  color: var(--oring);
 }

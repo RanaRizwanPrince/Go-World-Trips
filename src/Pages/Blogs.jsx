@@ -19,7 +19,7 @@ const Blogs = () => {
             <section className="blog2">
                 <div className="container">
                     <div className="content">
-                        <h1>Latest Travel Stories & Guides with Go World Trips</h1>
+                        <h1>Latest Travel Stories and Guides with Go World Trips</h1>
                         <p>Discover expert travel tips, visa guidance, destination insights, and inspiring stories with Go World Trips. Our blog is designed for UK travellers seeking smart planning, stress-free journeys, and trusted advice to explore the world confidently, safely, and with unforgettable experiences at every step of their travel journey.</p>
                     </div>
                     <div className="row">
@@ -34,7 +34,7 @@ const Blogs = () => {
                                         </div>
                                         <h5>{Bdata.h3}</h5>
                                         <p>{Bdata.p}</p>
-                                        <NavLink to="#" className="btn hover">Read More <HiExternalLink /></NavLink>
+                                        <NavLink to="*" className="btn hover">Read More <HiExternalLink /></NavLink>
                                     </div>
                                 </div>
                             </div>

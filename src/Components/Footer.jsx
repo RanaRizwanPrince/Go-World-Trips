@@ -22,17 +22,19 @@ const Footer = () => {
                         <div className="col-lg-3 col-md-6 my-2">
                             <h1 data-aos="fade-up">Essential Links</h1>
                             <NavLink className="Linki" to="/About" data-aos="fade-up">About Us</NavLink><br />
-                            <NavLink className="Linki" to="" data-aos="fade-up">Delivery Information</NavLink><br />
-                            <NavLink className="Linki" to="" data-aos="fade-up">Terms & Conditions</NavLink><br />
-                            <NavLink className="Linki" to="" data-aos="fade-up">Customer Service</NavLink><br />
+                            <NavLink className="Linki" to="/contact" data-aos="fade-up">Delivery Information</NavLink><br />
+                            <NavLink className="Linki" to="/Terms_Conditions" data-aos="fade-up">Terms & Conditions</NavLink><br />
+                            <NavLink className="Linki" to="/Our_Services" data-aos="fade-up">Our Services</NavLink><br />
+                            <NavLink className="Linki" to="/Faq" data-aos="fade-up">Frequently Asked Questions (FAQ)</NavLink><br />
                         </div>
                         <div className="col-lg-3 col-md-6 my-2">
                             <h1 data-aos="fade-up">Our Assistance</h1>
-                            <NavLink className="Linki" to="" data-aos="fade-up">Best Tour Guide</NavLink><br />
-                            <NavLink className="Linki" to="" data-aos="fade-up">Tour Booking</NavLink><br />
-                            <NavLink className="Linki" to="" data-aos="fade-up">Hotel Booking</NavLink><br />
-                            <NavLink className="Linki" to="" data-aos="fade-up">Ticket Booking</NavLink><br />
-                            <NavLink className="Linki" to="" data-aos="fade-up">Rental Services</NavLink><br />
+                            <NavLink className="Linki" to="/Best_Tour_Guide" data-aos="fade-up">Best Tour Guide</NavLink><br />
+                            <NavLink className="Linki" to="/Tour_Booking" data-aos="fade-up">Tour Booking</NavLink><br />
+                            <NavLink className="Linki" to="/Hotel_Booking" data-aos="fade-up">Hotel Booking</NavLink><br />
+                            <NavLink className="Linki" to="/Ticket_Booking" data-aos="fade-up">Ticket Booking</NavLink><br />
+                            <NavLink className="Linki" to="/Rental_Services" data-aos="fade-up">Rental Services</NavLink><br />
+                            <NavLink className="Linki" to="https://wa.me/447311132376" data-aos="fade-up">Customized Tour Plan</NavLink><br />
                         </div>
                         <div className="col-lg-3 col-md-6 my-2">
                             <h1 data-aos="fade-up">Get In Touch</h1>

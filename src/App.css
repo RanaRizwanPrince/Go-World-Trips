@@ -677,7 +677,7 @@ p {
 }
 
 .about3 {
-  padding: 50px 0px;
+  padding: 10px 0px;
   color: var(--white);
 
   .box {
@@ -842,6 +842,22 @@ p {
     h3 {
       color: var(--blue);
     }
+  }
+}
+
+.faq2 {
+  h2 {
+    color: var(--oring); 
+  }
+
+  .accordion-button {
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: var(--oring);
+    color: var(--white);
   }
 }
 

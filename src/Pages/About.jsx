@@ -28,36 +28,40 @@ const About = () => {
                             <div className="mainbox">
                                 <div className="box">
                                     <h2><MdGppGood /></h2>
-                                    <h5>Explore Destinations </h5>
+                                    <h6>Explore Destinations</h6>
                                 </div>
                                 <div className="box">
                                     <h2><MdGppGood /></h2>
-                                    <h5>Travel Experiences </h5>
+                                    <h6>Travel Experiences</h6>
                                 </div>
                                 <div className="box">
                                     <h2><MdGppGood /></h2>
-                                    <h5>Holiday Packages</h5>
+                                    <h6>Holiday Packages</h6>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 my-2 text-center">
                             <img src="https://html.tonatheme.com/2025/tourvisor/assets/images/resource/about-1.jpg" className="img-fluid" />
                         </div>
-                        <div className="col-lg-6 col-md-6 box">
-                            <p data-aos="fade-up"><MdGppGood /> Turn your travel dreams into reality with expert guidance.</p>
-                            <p data-aos="fade-up"><MdGppGood /> Unconditional support for Schengen visa applications.</p>
-                            <p data-aos="fade-up"><MdGppGood /> Accomplished consultancy for UK citizenship process.</p>
-                            <p data-aos="fade-up"><MdGppGood /> Customized Europe tour packages designed to match your budget and preferences.</p>
-                            <p data-aos="fade-up"><MdGppGood /> Step-by-step assistance from documentation to departure.</p>
-                            <p data-aos="fade-up"><MdGppGood /> Accurate travel itineraries aligned with embassy requirements.</p>
+                        <div className="col-lg-6 col-md-6 my-2">
+                            <div className="box">
+                                <p data-aos="fade-up"><MdGppGood /> Turn your travel dreams into reality with expert guidance.</p>
+                                <p data-aos="fade-up"><MdGppGood /> Unconditional support for Schengen visa applications.</p>
+                                <p data-aos="fade-up"><MdGppGood /> Accomplished consultancy for UK citizenship process.</p>
+                                <p data-aos="fade-up"><MdGppGood /> Customized Europe tour packages designed to match your budget and preferences.</p>
+                                <p data-aos="fade-up"><MdGppGood /> Step-by-step assistance from documentation to departure.</p>
+                                <p data-aos="fade-up"><MdGppGood /> Accurate travel itineraries aligned with embassy requirements.</p>
+                            </div>
                         </div>
-                        <div className="col-lg-6 col-md-6 box">
-                            <p data-aos="fade-up"><MdGppGood /> Hotel reservations and travel insurance arrangements.</p>
-                            <p data-aos="fade-up"><MdGppGood /> Embassy appointment booking and application review support.</p>
-                            <p data-aos="fade-up"><MdGppGood /> Transparent process with no hidden charges.</p>
-                            <p data-aos="fade-up"><MdGppGood /> Friendly and responsive customer support team.</p>
-                            <p data-aos="fade-up"><MdGppGood /> Reduced stress and higher confidence in visa approval.</p>
-                            <p data-aos="fade-up"><MdGppGood /> Personalized consultation based on your travel goals.</p>
+                        <div className="col-lg-6 col-md-6 my-2">
+                            <div className="box">
+                                <p data-aos="fade-up"><MdGppGood /> Hotel reservations and travel insurance arrangements.</p>
+                                <p data-aos="fade-up"><MdGppGood /> Embassy appointment booking and application review support.</p>
+                                <p data-aos="fade-up"><MdGppGood /> Transparent process with no hidden charges.</p>
+                                <p data-aos="fade-up"><MdGppGood /> Friendly and responsive customer support team.</p>
+                                <p data-aos="fade-up"><MdGppGood /> Reduced stress and higher confidence in visa approval.</p>
+                                <p data-aos="fade-up"><MdGppGood /> Personalized consultation based on your travel goals.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
